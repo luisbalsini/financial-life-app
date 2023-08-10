@@ -1,5 +1,19 @@
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
+import Login from '../../modules/login';
+import { MenuUrl } from '../../shared/enums/menuUrl.enum';
+
+const Stack = createNativeStackNavigator();
 
 const Navigation = () => {
-  return <NavigationContainer />;
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name={MenuUrl.LOGIN} component={Login} options={{ headerShown: false }} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 };
+
+export default Navigation;
