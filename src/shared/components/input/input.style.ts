@@ -8,4 +8,5 @@ export const ContainerInput = styled.TextInput`
   border-radius: 4px;
   border: black;
   color: ${theme.colors.basicTheme.black};
+  margin: 5px 0 7px 0;
 `;

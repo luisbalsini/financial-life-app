@@ -4,7 +4,11 @@ import { theme } from '../../themes/themes';
 import { textTypes } from '../text/text.type';
 import { ContainerInput } from './input.style';
 
-const Input = () => {
+interface inputProps {
+  title: string;
+}
+
+const Input = ({ title }: inputProps) => {
   return (
     <>
       <Text
@@ -12,7 +16,7 @@ const Input = () => {
         color={theme.colors.basicTheme.black}
         type={textTypes.PARAGRAPH_REGULAR}
       >
-        Login
+        {title}
       </Text>
       <ContainerInput />
     </>

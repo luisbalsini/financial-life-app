@@ -12,8 +12,7 @@ export const ContainerLogin = styled.View`
 `;
 
 export const DisplayLoginColumn = styled.View`
-  width: 100%;
-  background-color: aliceblue;
+  width: 78%;
   display: flex;
   flex-direction: column;
 `;
